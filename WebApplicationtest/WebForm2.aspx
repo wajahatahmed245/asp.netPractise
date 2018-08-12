@@ -11,6 +11,7 @@
         <div>
             <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+            <asp:Panel ID="Panel1" runat="server"></asp:Panel>
         </div>
     </form>
 </body>

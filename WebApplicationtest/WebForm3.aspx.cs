@@ -11,14 +11,21 @@ namespace WebApplicationtest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Page.IsPostBack)
+            { 
+            
             Response.Write("number of application " +Application["TotalApllications"]);
             Response.Write("<br/>");
             Response.Write( "number of user online " + Application["TotalUserSessions"] );
-
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
