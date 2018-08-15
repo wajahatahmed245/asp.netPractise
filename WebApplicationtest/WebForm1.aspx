@@ -43,8 +43,9 @@
         <br>
         <h2 class="heading text-uppercase">
             <i class="fa fa-square"></i> &nbsp Use local account to log in
-            <hr>
+            
         </h2>
+        <hr>
         <div class="card">
             <div class="card-header text-center display-4 text-capitalize bg-light heading">
                 <i class="fa fa-sign-in"></i>log in</div>
@@ -52,7 +53,7 @@
 
 
                 <!-- FORM -->
-                <form action="">
+              
                     <div class="form-group">
                         <label for="usr">Email:</label>
                         <input type="text" class="form-control" id="usr" name="username">
@@ -62,7 +63,7 @@
                         <input type="password" class="form-control" id="pwd" name="password">
                     </div>
                     <button type="submit" class="btn btn-grey text-capitalize">log in</button>
-                </form>
+              
 
 
             </div>

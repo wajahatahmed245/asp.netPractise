@@ -11,7 +11,7 @@
 
         <div>
             <asp:Label ID="Label1" runat="server" Text="Firstname"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
 
 
         </div>
@@ -20,7 +20,7 @@
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             </p>
             <asp:Label ID="Label3" runat="server" Text="Gender"></asp:Label>
-            <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                 <asp:ListItem>male</asp:ListItem>
                 <asp:ListItem>female</asp:ListItem>
         </asp:DropDownList>

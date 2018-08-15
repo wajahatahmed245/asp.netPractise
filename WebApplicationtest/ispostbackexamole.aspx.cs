@@ -11,12 +11,34 @@ namespace WebApplicationtest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Page.IsPostBack == false)
+            {
+                addingDropDwon();
+            }
 
+        }
+
+        protected void addingDropDwon( )
+        {
+            DropDownList1.Items.Add( "Added by programing " );
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+           
 
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.Write( "yes what" );
+            
         }
     }
 }
