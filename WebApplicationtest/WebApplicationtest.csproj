@@ -71,13 +71,25 @@
     <Content Include="Global.asax" />
     <Content Include="ispostbackexamole.aspx" />
     <Content Include="radiobutton.aspx" />
+    <Content Include="rough.aspx" />
+    <Content Include="servercontrols.aspx" />
+    <Content Include="testing responsive.aspx" />
     <Content Include="textBoxControl.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bootsstrap.Master.cs">
+      <DependentUpon>bootsstrap.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bootsstrap.Master.designer.cs">
+      <DependentUpon>bootsstrap.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -96,6 +108,20 @@
     <Compile Include="radiobutton.aspx.designer.cs">
       <DependentUpon>radiobutton.aspx</DependentUpon>
     </Compile>
+    <Compile Include="rough.aspx.cs">
+      <DependentUpon>rough.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rough.aspx.designer.cs">
+      <DependentUpon>rough.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="servercontrols.aspx.cs">
+      <DependentUpon>servercontrols.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="servercontrols.aspx.designer.cs">
+      <DependentUpon>servercontrols.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -109,6 +135,13 @@
     </Compile>
     <Compile Include="Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="testing responsive.aspx.cs">
+      <DependentUpon>testing responsive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testing responsive.aspx.designer.cs">
+      <DependentUpon>testing responsive.aspx</DependentUpon>
     </Compile>
     <Compile Include="textBoxControl.aspx.cs">
       <DependentUpon>textBoxControl.aspx</DependentUpon>
@@ -140,6 +173,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootsstrap.Master" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Site2.Master" />
